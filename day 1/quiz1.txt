@@ -11,3 +11,5 @@
 public static void main(String[] args) {
     System.out.println("Xenia Francine B. Umbal")
 }
+
+Bonus: Colorblind is not yellow
