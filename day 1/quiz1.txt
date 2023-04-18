@@ -6,3 +6,8 @@
 6. JRE
 7. False
 8. JAVA_HOME
+9-10.
+
+public static void main(String[] args) {
+    System.out.println("Xenia Francine B. Umbal")
+}
