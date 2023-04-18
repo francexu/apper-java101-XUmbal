@@ -27,7 +27,7 @@ class FlamesHope {
 
         // ITEM#2: Check if crushName is not empty. If empty, display "Your crushName is required."  then the program should terminate
         if (crushName.isEmpty()) {
-            System.out.println("Your crushName is required.");
+            System.out.println("Your crush name is required.");
             System.exit(0);
         }
 
