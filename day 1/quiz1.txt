@@ -3,4 +3,5 @@
 3. Standard Libary
 4.  Java Runtime Environment
 5. Java Virtual Machine
-6. JVM
+6. JRE
+7. False
