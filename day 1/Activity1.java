@@ -39,8 +39,7 @@ class FlamesHope {
         System.out.println("Your compatibility result: " + result);
 
         // ITEM#5 if result is less than 50, display "SAD :( ", else display name and crush name with <3 E.g "Orvyl and JY is <3"
-        int ans = result(nameLength, crushNameLength);
-        if (ans < 50) {
+        if (result < 50) {
             System.out.println("SAD :(");
         } else {
             System.out.println(String.format("%s and %s is <3", name, crushName));
