@@ -2,9 +2,9 @@ class PrimeNumber {
     public static void main(String[] args) {
         // call the isPrimeNumberMethod
         if (isPrimeNumber(4)) {
-            System.out.println(true);
+            System.out.println("true");
         } else {
-            System.out.println(false);
+            System.out.println("false");
         }
     }
 
