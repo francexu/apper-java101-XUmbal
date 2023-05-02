@@ -1,14 +1,10 @@
 class PrimeNumber {
     public static void main(String[] args) {
         // call the isPrimeNumberMethod
-        if (isPrimeNumber(4)) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        System.out.println(isPrimeNumber(60));
     }
 
-    static boolean isPrimeNumber(int num) {
+    public static boolean isPrimeNumber(int num) {
         // check if number is less than or equal to 1
         if (num <= 1) {
             return false;
