@@ -9,18 +9,44 @@ public class App {
         double price = 4.45;
         int age = 20;
 
+        allAboutNumbers(discount, price, age);
+
+        // Strings
+        String myName = "Xenia";
+
+        loops();
+    }
+
+    public static void allAboutNumbers(float discount, double price, int age) {
         float ans = discount + age;
         System.out.println(ans);
 
         double newAns = discount + price;
         System.out.println(newAns);
-
-        // Strings
-        String myName = "Xenia";
     }
 
-    public static void allAboutNumbers(float discount, double price ) {
+    public static void loops() {
+        // while loop - prints numbers 0-9
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
 
+        System.out.println("--------------");
+
+        // do while loop - runs once before checking the condition
+        int j = 0;
+        do {
+            System.out.println(j);
+            j++;
+        } while (j < 10);
+
+        System.out.println("--------------");
+
+        // for loop
+        for (int k = 0; k < 10; k++) {
+            System.out.println(k);
+        }
     }
-
 }
