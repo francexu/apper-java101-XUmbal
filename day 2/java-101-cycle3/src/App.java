@@ -14,5 +14,13 @@ public class App {
 
         double newAns = discount + price;
         System.out.println(newAns);
+
+        // Strings
+        String myName = "Xenia";
     }
+
+    public static void allAboutNumbers(float discount, double price ) {
+
+    }
+
 }
