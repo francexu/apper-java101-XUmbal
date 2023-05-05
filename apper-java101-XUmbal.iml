@@ -10,6 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/day 2/java-101-cycle3/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day 3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day 3-1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day 3/oop1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day 3/oop1/src/app1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day 3/oop1/src/app1/blueprint1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
