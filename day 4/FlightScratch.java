@@ -1,10 +1,10 @@
-public class Flight {
+public class FlightScratch {
     // Properties/Fields - store object state
     int passenger;
     int seats;
 
     // Constructors - executable during object creation
-    Flight() {
+    FlightScratch() {
         passenger = 0;
         seats = 150;
     }
