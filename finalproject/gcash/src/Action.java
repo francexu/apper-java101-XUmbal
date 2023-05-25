@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Action {
     // TODO: Create HashMap
-    private static Map<String, User> users;
+    private Map<String, User> users;
 
     public Action() {
         this.users = new HashMap<String, User>();
@@ -27,7 +27,7 @@ public class Action {
     public void sendLoad(String senderMobileNumber, String recipientMobileNumber, double amount) {
         User sender = users.get(senderMobileNumber);
         User recipient = users.get(recipientMobileNumber);
-        // TODO: check if sender balance is greater than or equal amount
+        // TODO: error handling
         try {
             if (!users.containsKey(senderMobileNumber)) {
                 throw new Exception("Sender is not registered.");
@@ -44,9 +44,9 @@ public class Action {
             }
             else {
                 double newSenderBalance = sender.getBalance() - amount;
+                sender.setBalance(newSenderBalance);
                 double newRecipientBalance = recipient.getBalance() + amount;
-                System.out.println(sender.getName() + " " + newSenderBalance);
-                System.out.println(recipient.getName() + " " + newRecipientBalance);
+                recipient.setBalance(newRecipientBalance);
                 System.out.println("Amount of " + amount + " was SUCCESSFULLY loaded to " + recipientMobileNumber + " (" + recipient.getName() + ")" + " from " + senderMobileNumber + " (" + sender.getName() + ").");
             }
         } catch (Exception e) {

@@ -1,7 +1,7 @@
 public class User {
-    private static String mobileNumber;
-    private static String name;
-    private static double balance;
+    private String mobileNumber;
+    private String name;
+    private double balance;
 
     // TODO: constructor
     public User(String mobileNumber, String name, double balance) {
@@ -12,28 +12,28 @@ public class User {
 
     // TODO: Getters and Setters
 
-    public static String getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public static void setMobileNumber(String mobileNumber) {
-        User.mobileNumber = mobileNumber;
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static void setName(String name) {
-        User.name = name;
+    public void setName(String name) {
+       this.name = name;
     }
 
-    public static double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public static void setBalance(double balance) {
-        User.balance = balance;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     @Override
