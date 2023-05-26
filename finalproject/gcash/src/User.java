@@ -13,31 +13,39 @@ public class User {
     // TODO: Getters and Setters
 
     public String getMobileNumber() {
+
         return mobileNumber;
     }
 
     public void setMobileNumber(String mobileNumber) {
+
         this.mobileNumber = mobileNumber;
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
-       this.name = name;
+
+        this.name = name;
     }
 
     public double getBalance() {
+
         return balance;
     }
 
     public void setBalance(double balance) {
+
         this.balance = balance;
     }
 
+    // TODO: override toString method for printing HashMap
     @Override
     public String toString() {
+
         return mobileNumber + ": " + name + " " + balance;
     }
 }

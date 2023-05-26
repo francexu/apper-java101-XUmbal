@@ -54,6 +54,7 @@ public class Action {
         }
     }
 
+    // TODO: Display users and their balance
     public void displayUsers() {
         System.out.println("CURRENT BALANCE");
         for (Map.Entry<String, User> entry : users.entrySet()) {
