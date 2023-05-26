@@ -1,3 +1,8 @@
+package classes;
+
+import interfaces.Loadable;
+import interfaces.Shareable;
+
 import java.util.*;
 
 public class Action implements Shareable, Loadable {
