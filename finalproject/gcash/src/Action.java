@@ -5,10 +5,11 @@ public class Action {
     private Map<String, User> users;
 
     public Action() {
+
         this.users = new HashMap<String, User>();
     }
 
-    // TODO: Validate user
+    // TODO: Register user and validate user credentials
     public void registerUser(String mobileNumber, String name, double balance) {
         try {
             if (users.containsKey(mobileNumber)) {
