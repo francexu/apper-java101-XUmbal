@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Action {
+public class Action implements Shareable, Loadable {
     // TODO: Create HashMap
     private Map<String, User> users;
 
@@ -46,13 +46,20 @@ public class Action {
             else {
                 double newSenderBalance = sender.getBalance() - amount;
                 sender.setBalance(newSenderBalance);
-                double newRecipientBalance = recipient.getBalance() + amount;
-                recipient.setBalance(newRecipientBalance);
-                System.out.printf("Amount of %.2f was SUCCESSFULLY loaded to %s (%s) from %s (%s). %n", amount, recipientMobileNumber, recipient.getName(), senderMobileNumber, sender.getName());
+                receiveLoad(senderMobileNumber, recipientMobileNumber, amount);
             }
         } catch (Exception e) {
             System.out.println("Unable to send load. " + e.getMessage());
         }
+    }
+
+    public void receiveLoad(String senderMobileNumber, String recipientMobileNumber, double amount)
+    {
+        User sender = users.get(senderMobileNumber);
+        User recipient = users.get(recipientMobileNumber);
+        double newRecipientBalance = recipient.getBalance() + amount;
+        recipient.setBalance(newRecipientBalance);
+        System.out.printf("Amount of %.2f was SUCCESSFULLY loaded to %s (%s) from %s (%s). %n", amount, recipientMobileNumber, recipient.getName(), senderMobileNumber, sender.getName());
     }
 
     // TODO: Display users and their balance
