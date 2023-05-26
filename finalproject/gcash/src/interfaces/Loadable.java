@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface Loadable {
-    public void receiveLoad(String senderMobileNumber, String recipientMobileNumber, double amount);
+    void receiveLoad(String senderMobileNumber, String recipientMobileNumber, double amount);
 }

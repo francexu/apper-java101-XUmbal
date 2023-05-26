@@ -39,6 +39,7 @@ public class App {
                 isRunning = false;
             } else if (choice.equals("q")) {
                 System.out.println("Thank you for using GCash Share-A-Load!");
+                System.out.println("Exiting program...");
                 isRunning = false;
             } else {
                 System.out.println("Invalid choice, please try again.");

@@ -11,7 +11,7 @@ public class Action implements Shareable, Loadable {
 
     public Action() {
 
-        this.users = new HashMap<String, User>();
+        this.users = new HashMap<>();
     }
 
     // TODO: Register user and validate user credentials
@@ -19,9 +19,14 @@ public class Action implements Shareable, Loadable {
         try {
             if (users.containsKey(mobileNumber)) {
                 throw new Exception("Number already exists.");
+            } else if (!mobileNumber.matches("[0-9]+")) {
+                throw new Exception("Numbers only.");
             } else if (name.isEmpty()) {
                 throw new Exception("Name cannot be blank.");
-            } else {
+            } else if (!name.matches("[a-zA-Z_]+")) {
+                throw new Exception("Name should contain letters only.");
+            }
+            else {
                 users.put(mobileNumber, new User(mobileNumber, name, balance));
             }
         } catch (Exception e) {
@@ -32,7 +37,6 @@ public class Action implements Shareable, Loadable {
     // TODO: Send load
     public void sendLoad(String senderMobileNumber, String recipientMobileNumber, double amount) {
         User sender = users.get(senderMobileNumber);
-        User recipient = users.get(recipientMobileNumber);
         // TODO: error handling
         try {
             if (!users.containsKey(senderMobileNumber)) {
@@ -58,6 +62,7 @@ public class Action implements Shareable, Loadable {
         }
     }
 
+    // TODO: Receive load and print success message
     public void receiveLoad(String senderMobileNumber, String recipientMobileNumber, double amount)
     {
         User sender = users.get(senderMobileNumber);
