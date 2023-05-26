@@ -48,7 +48,7 @@ public class Action {
                 sender.setBalance(newSenderBalance);
                 double newRecipientBalance = recipient.getBalance() + amount;
                 recipient.setBalance(newRecipientBalance);
-                System.out.println("Amount of " + amount + " was SUCCESSFULLY loaded to " + recipientMobileNumber + " (" + recipient.getName() + ")" + " from " + senderMobileNumber + " (" + sender.getName() + ").");
+                System.out.printf("Amount of %.2f was SUCCESSFULLY loaded to %s (%s) from %s (%s). %n", amount, recipientMobileNumber, recipient.getName(), senderMobileNumber, sender.getName());
             }
         } catch (Exception e) {
             System.out.println("Unable to send load. " + e.getMessage());
